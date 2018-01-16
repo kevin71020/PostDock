@@ -158,7 +158,7 @@ services:
             CHECK_PASSWORD: postgres_password
             CHECK_PGCONNECT_TIMEOUT: 3 #timout for checking if primary node is healthy
             SSH_ENABLE: 1
-            DB_USERS: postgres:postgres_password # in format user:password[,user:password[...]]
+            DB_USERS: postgres:b1uxcdq # in format user:password[,user:password[...]]
             BACKENDS: "0:pgmaster::1:/var/lib/postgresql/data:ALLOW_TO_FAILOVER,1:pgslave1::::,3:pgslave3::::,2:pgslave2::::,4:pgslave2::::" #,4:pgslaveDOES_NOT_EXIST::::
                       # in format num:host:port:weight:data_directory:flag[,...]
                       # defaults:
